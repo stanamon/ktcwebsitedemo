@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Smoothscroll from "../../utility/SmoothScroll";
-
 const Homepage = () => {
     return (
         <div className="container">
