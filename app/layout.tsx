@@ -1,4 +1,6 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
+import Loading from "./utility/KTCLoad";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -16,7 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+      <Suspense fallback={<Loading/>}>
+        {children}
+      </Suspense>
+      </body>
     </html>
   );
 }
