@@ -20,7 +20,7 @@ body {
   height: 100dvh;
   padding: 0;
   margin: 0;
-  background-image: linear-gradient(to right bottom, rgb(240, 235, 233), rgb(16, 54, 123));
+  background-image: linear-gradient(to right bottom, rgb(240, 235, 233), rgb(196, 131, 10));
   overflow: scroll;
 }
 
@@ -30,24 +30,35 @@ body {
   height: 100dvh;
   padding: 0;
   margin: 0;
-  background-color: rgba(25,255,55,0.8);
+  background-color: rgb(255, 241, 212);
   overflow: scroll;
-
 }
 
 .navbarA {
   position: sticky;
-  top: 0;
+  top: 0%;
   z-index: 100;
   width: 100vw;
-  height: 95px;
+  height: 75px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   padding: 0;
-  margin-top: 0;
+  margin: 0;
   background-color: rgb(184, 15, 15);
+}
+
+.navpanela {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 75px;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(150, 41, 29);
 }
 
 .navbarBcon {
@@ -73,7 +84,6 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
-
 
 .navtxt {
   color: white;
@@ -113,9 +123,21 @@ body {
 
 .pagesection {
   position: relative;
-  height: 90dvh;
+  height: 95dvh;
   padding-top: 95px;
   margin: 0;
+}
+
+.mgntop10 {
+  margin-top: 10%;
+}
+
+.mgntop5 {
+  margin-top: 5%;
+}
+
+.mgntop20 {
+  margin-top: 20%;
 }
 
 .ktclogo {
@@ -131,10 +153,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 8%;
 }
 
 .ktcslogan h1 {
-  color: white;
+  color: rgb(239, 239, 239);
   font-size: 2rem;
   line-height: 2.5;
   padding: 0;
@@ -215,13 +238,11 @@ body {
 .contentcell {
   width: 85%;
   height: max-content;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding: 2rem;
   margin-left: auto;
   margin-right: auto;
   border-radius: 25px;
-  border: 2px solid rgba(25,5,235,0.8);
-  background-color: rgba(25,5,235,0.1);
+  background-color: rgb(196, 170, 85);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -249,7 +270,8 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
   margin-bottom: 2rem;
-  border: 2px solid rgba(25,5,235,0.8);
+  border: 2px solid rgb(26,26,26);
+  border-radius: 15px;
   background-color: rgba(5,5,5,0);
 }
 
@@ -292,7 +314,7 @@ body {
 .bannerimgc{
   position: relative;
   width: 100vw;
-  height: 75%;
+  height: 80%;
   padding: 0;
   margin: 0;
   margin-top: -10px;
@@ -301,36 +323,65 @@ body {
   background-repeat: no-repeat;
   background-position: top;
   overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.logo_oversizec {
-  width: 100vw;
-  height: 100px;
-  padding: 0;
-  margin-top: -8px;
-  background-color: rgb(83, 120, 121);
-  overflow: visible;
-}
-
-.logo_oversizec::before {
-  content: " ";
+.logopanelc {
   position: absolute;
-  top: 30px;
+  z-index: 101;
+  top: 0;
   left: 0;
-  width: 30%;
-  height: 30%;
-  background-image: url('../public/KTClogoAlphaII.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  z-index: 1;
+  width: fit-content;
+  height: 400px;
+  padding: 0;
+  margin: 0;
+}
+
+.logoitemc {
+  position: sticky;
+  top: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.bannerstripc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: fit-content;
+  padding: 0;
+  margin-top: 4%;
+  background-color: rgb(87, 75, 61);
 }
 
 .ktcnameC{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: white;
   font-size: 1.5rem;
   text-align: center;
   padding: 0;
-  margin-right: 4%;
-  margin-top: -112px;
+  margin:0;
+  line-height: normal;
+}
+
+.contentcellc {
+  width: 85%;
+  height: max-content;
+  padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  border: 2px solid rgba(25,25,25,0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

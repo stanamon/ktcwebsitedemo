@@ -7,16 +7,16 @@ export default function page() {
     return(
         <div className='appcontainC'>
         <Suspense fallback={<div>Loading...</div>}>
-            {/* <NavBarSampleB /> */}
             <div className='navbarBcon'>
             <NavBarSampleB/>
             </div>
-            <div className='logo_oversizec'/>
-            <div className='gridrow1fr2fr'>
-                <div></div>
+            <div className='bannerstripc'>
                 <div className='ktcnameC'>
                     <h1>Keewatin Tribal Council</h1>
                 </div>
+            </div>
+            <div className='topbannerc'>
+              
             </div>
             <div className='bannerimgc'>
                 <div className='ktcslogan'>
@@ -25,9 +25,102 @@ export default function page() {
                     <h1>Empowerment</h1>
                 </div>
             </div>
-            <div className='pagesection'>
-                
+            <div className='navpanela'/>
+            <div className='logopanelc'>
+                <Image
+                    src='/KTClogoAlphaII.png'
+                    alt='heroA'
+                    width={400}
+                    height={236}
+                    className='logoitemc'
+                />
             </div>
+            <div className='pagesection'>
+                <div className='gridrow1fr1fr'>
+                    <Image
+                        src='/KTClogoAlphaII.png'
+                        alt='heroA'
+                        width={400}
+                        height={245}
+                        style={{alignSelf: 'center', justifySelf: 'center'}}
+                    />
+                    <div className='contentcellc'>
+                        <h1>Section C</h1>
+                        <h2>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsa 
+                        exercitationem pariatur expedita quas, excepturi repudiandae doloremque 
+                        </h2> 
+                    </div>
+                </div>
+            </div>
+            <div className='pagesection mgntop10'>
+                <div className='contentcellc'>
+                    <h1>Section D</h1>
+                    <h2>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsa 
+                        exercitationem pariatur expedita quas, excepturi repudiandae doloremque 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsa 
+                        exercitationem pariatur expedita quas, excepturi repudiandae doloremque 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsa 
+                        exercitationem pariatur expedita quas, excepturi repudiandae doloremque 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsa 
+                       
+                    </h2>
+                    <button>Button</button> 
+                </div>
+            </div>
+            <div className='pagesection'>
+                <div className='gridrow1fr2fr'>
+                    <div className='sideselect'>
+                        <div>
+                            <h3>Section</h3>
+                            <Image
+                                src='/KTClogoAlphaII.png'
+                                alt='heroA'
+                                width={80}
+                                height={45}
+                            />
+                        </div>
+                        <div>
+                            <h3>Section</h3>
+                            <Image
+                                src='/KTClogoAlphaII.png'
+                                alt='heroA'
+                                width={80}
+                                height={45}
+                            />
+                        </div>
+                        <div>
+                            <h3>Section</h3>
+                            <Image
+                                src='/KTClogoAlphaII.png'
+                                alt='heroA'
+                                width={80}
+                                height={45}
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <h1>Section 5</h1>
+                        <h2>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsa 
+                        exercitationem pariatur expedita quas, excepturi repudiandae doloremque 
+                        </h2> 
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div className='gridrow1fr2fr' style={{backgroundColor:"lightblue"}}>
+                    <div>
+                        <h3>Section</h3>
+                       
+                    </div>
+                    <div>
+                        <h3>Section</h3>
+                       
+                    </div>
+                </div>
+            </footer>
         </Suspense>
         </div>
     );

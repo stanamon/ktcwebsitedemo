@@ -120,11 +120,9 @@ export default function page() {
                 <div className='gridrow1fr2fr' style={{backgroundColor:"lightblue"}}>
                     <div>
                         <h3>Section</h3>
-                       
                     </div>
                     <div>
                         <h3>Section</h3>
-                       
                     </div>
                 </div>
             </footer>
