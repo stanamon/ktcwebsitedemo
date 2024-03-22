@@ -10,7 +10,7 @@ body {
   height: 100dvh;
   padding: 0;
   margin: 0;
-  background-image: linear-gradient(to right bottom, rgb(240, 235, 233), rgb(24, 142, 38));
+  background-image: linear-gradient(to right bottom, rgb(240, 235, 233), #4895d9);
   overflow: scroll;
 }
 
@@ -20,7 +20,7 @@ body {
   height: 100dvh;
   padding: 0;
   margin: 0;
-  background-image: linear-gradient(to right bottom, rgb(240, 235, 233), rgb(196, 131, 10));
+  background-image: linear-gradient(to right bottom, rgb(240, 235, 233), rgb(28, 135, 217));
   overflow: scroll;
 }
 
@@ -30,7 +30,7 @@ body {
   height: 100dvh;
   padding: 0;
   margin: 0;
-  background-color: rgb(255, 241, 212);
+  background-image:linear-gradient(to right bottom, white, #4895d0);
   overflow: scroll;
 }
 
@@ -46,7 +46,8 @@ body {
   align-items: center;
   padding: 0;
   margin: 0;
-  background-color: rgb(184, 15, 15);
+  background-color: #52591d;
+  border-bottom: #f23d4c 12px solid;
 }
 
 .navpanela {
@@ -59,6 +60,18 @@ body {
   padding: 0;
   margin: 0;
   background-color: rgb(150, 41, 29);
+}
+
+.navpanel {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  height: 85px;
+  padding: 0;
+  margin-top: -1px;
+  background-color:#52591d;
 }
 
 .navbarBcon {
@@ -123,9 +136,9 @@ body {
 
 .pagesection {
   position: relative;
-  height: 95dvh;
-  padding-top: 95px;
+  height: 100dvh;
   margin: 0;
+  padding: 0;
 }
 
 .mgntop10 {
@@ -165,8 +178,6 @@ body {
 }
 
 .ktcsloganB {
-  position: absolute;
-  right: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -181,16 +192,16 @@ body {
   margin: 0;
 }
 
-.logo_oversize {
+.logo_oversize5t5 {
   width: 100vw;
   height: 150px;
   padding: 0;
   margin-top: -8px;
-  background-color: rgb(85, 121, 83);
+  background-color: #4895d9;
   overflow: visible;
 }
 
-.logo_oversize::before {
+.logo_oversize56::before {
   content: " ";
   position: absolute;
   top: 40px;
@@ -206,34 +217,31 @@ body {
 
 .leftpanelB {
   position: relative;
-  width: 60%;
+  width: 105%;
   height: 400px;
   padding: 0;
   margin-top: -15px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  border: 2px solid rgb(25,25,25);
-  background-color: red;
+  border: 1px solid rgb(25,25,25);
+  background-color: #f23d4c;
+  ;
 }
 
-.leftpanelB::before {
-  content: " ";
-  position: absolute;
-  top: 0;
-  z-index: 0;
-  width: 95%;
-  height: 100%;
-  background-image: url('../public/ktcherobkg1.jpg');
-  
+.ktcbannerbkgB {
+  width: 100%;
+  height: 385px;
+  overflow: hidden;
 }
 
 .heroA {
   height: 100%;
+  width: 100vw;
   padding: 0;
   margin: 0;
-  background-image: url('../public/ktcherobkg1.jpg');
+  background-image: url('../public/BannerIMG.jpg');
+  background-size: cover;
 }
-
 
 .contentcell {
   width: 85%;
@@ -242,7 +250,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   border-radius: 25px;
-  background-color: rgb(196, 170, 85);
+  background-color:#a2d4f2;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -301,15 +309,6 @@ body {
   font-size: 2rem;
 }
 
-.itemcenter {
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin-left: 18%;
-  color: rgb(26,26,26);
-  font-size: 1.5rem;
-}
-
 /* sample 3 */
 .bannerimgc{
   position: relative;
@@ -330,18 +329,19 @@ body {
 }
 
 .logopanelc {
-  position: absolute;
+  position: sticky;
   z-index: 101;
   top: 0;
   left: 0;
-  width: fit-content;
-  height: 400px;
+  width: 100%;
+  height: fit-content;
   padding: 0;
   margin: 0;
 }
 
 .logoitemc {
   position: sticky;
+  z-index: 101;
   top: 0;
   padding: 0;
   margin: 0;
@@ -364,9 +364,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
-  font-size: 1.5rem;
-  text-align: center;
+  color: rgb(52, 52, 52);
+  font-size: 2.5rem;
   padding: 0;
   margin:0;
   line-height: normal;
@@ -385,3 +384,17 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.contentbinc {
+  width: 85%;
+  height: max-content;
+  padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+

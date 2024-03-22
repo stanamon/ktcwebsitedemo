@@ -8,21 +8,15 @@ export default function page() {
         <div className='contains'>
             <Suspense fallback={<div>Loading...</div>}>
             <div className='heroA'>
-                <div className='gridrow1fr2fr'>
-                    <div>
-                        <Image
-                            src='/KTClogoAlphaII.png'
-                            alt='heroA'
-                            width={400}
-                            height={245}
-                        />
-                    </div>
-                    <div className='panelcenter'>
-                        <h1>
-                            Keewatin Tribal Council
-                        </h1>
-                    </div>
-                </div>
+                <div className='flexpage'>
+                    <Image
+                        src='/KTClogoAlphaII.png'
+                        alt='heroA'
+                        width={400}
+                        height={245}
+                        style={{alignSelf: 'center', justifySelf: 'center'}}
+                    />
+                </div>            
                 <div className='ktcslogan'>
                     <h1>Self-Sufficiency</h1>
                     <h1>Self-Determination</h1>

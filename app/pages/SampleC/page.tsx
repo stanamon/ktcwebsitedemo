@@ -7,53 +7,38 @@ export default function page() {
     return(
         <div className='appcontainC'>
         <Suspense fallback={<div>Loading...</div>}>
-            <div className='navbarBcon'>
-            <NavBarSampleB/>
+            <div className='logopanelc'>
+                <NavBarSampleB/>
             </div>
-            <div className='bannerstripc'>
+            <div className='pagesection'>
+                <Image
+                    src='/KTClogoAlphaII.png'
+                    alt='heroA'
+                    width={500}
+                    height={305}
+                />
                 <div className='ktcnameC'>
                     <h1>Keewatin Tribal Council</h1>
                 </div>
             </div>
-            <div className='topbannerc'>
-              
-            </div>
-            <div className='bannerimgc'>
-                <div className='ktcslogan'>
-                    <h1>Self-Sufficiency</h1>
-                    <h1>Self-Determination</h1>
-                    <h1>Empowerment</h1>
-                </div>
-            </div>
-            <div className='navpanela'/>
-            <div className='logopanelc'>
-                <Image
-                    src='/KTClogoAlphaII.png'
-                    alt='heroA'
-                    width={400}
-                    height={236}
-                    className='logoitemc'
-                />
-            </div>
+
             <div className='pagesection'>
                 <div className='gridrow1fr1fr'>
                     <Image
-                        src='/KTClogoAlphaII.png'
+                        src='/Eaglerapids2020.jpg'
                         alt='heroA'
                         width={400}
                         height={245}
                         style={{alignSelf: 'center', justifySelf: 'center'}}
                     />
-                    <div className='contentcellc'>
-                        <h1>Section C</h1>
-                        <h2>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsa 
-                        exercitationem pariatur expedita quas, excepturi repudiandae doloremque 
-                        </h2> 
+                    <div className='contentbinc'>
+                        <h1>Self-Sufficiency</h1>
+                        <h1>Self-Determination</h1>
+                        <h1>Empowerment</h1>
                     </div>
                 </div>
             </div>
-            <div className='pagesection mgntop10'>
+            <div className='pagesection'>
                 <div className='contentcellc'>
                     <h1>Section D</h1>
                     <h2>
