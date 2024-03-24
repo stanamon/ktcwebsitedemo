@@ -1,22 +1,24 @@
 import React, { Suspense } from 'react';
 import Image from 'next/image';
 import NavBarSampleB from '../../components/ui/NavBarSampleB';
+import Logo3 from '../../../public/KTClogoAlphaII.png';
 import Link from 'next/link';
 
 export default function page() {
     return(
         <div className='appcontainC'>
         <Suspense fallback={<div>Loading...</div>}>
-            <div className='logopanelc'>
+            <div className='navipanelc'>
                 <NavBarSampleB/>
             </div>
             <div className='pagesection'>
-                <Image
-                    src='/KTClogoAlphaII.png'
-                    alt='heroA'
-                    width={500}
-                    height={305}
-                />
+                <div className='logocontainC'>
+                    <Image
+                        src={Logo3}
+                        alt='heroA'
+                        fill
+                    />
+                </div>
                 <div className='ktcnameC'>
                     <h1>Keewatin Tribal Council</h1>
                 </div>

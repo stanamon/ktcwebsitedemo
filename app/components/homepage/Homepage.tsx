@@ -4,11 +4,10 @@ import Image from "next/image";
 import Smoothscroll from "../../utility/SmoothScroll";
 const Homepage = () => {
     return (
-        <div className="container">
+        <div className="appcontain">
             <Smoothscroll>
                 {/* Content start  */}
-                <div className="contentlayer">
-                    <section className="pagesection flexcenter" style={{backgroundColor:"black"}}>
+                    <section className="pagesection flexpage" style={{backgroundColor:"black"}}>
                         <Link href="/pages/SampleA" style={{color:"white"}}>
                             <h1>Sample1</h1>
                         </Link>
@@ -19,7 +18,6 @@ const Homepage = () => {
                             <h1>Sample3</h1>
                         </Link>
                     </section>
-                </div>
             </Smoothscroll>
         </div>
     );
